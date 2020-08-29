@@ -1,4 +1,5 @@
-const Sequelize = require("sequelize")
-//initialize your db, don't forget to include the possible heroku database URL
+const Sequelize = require("sequelize");
+const { STRING } = Sequelize;
+const db = new Sequelize('postgres://localhost/database');    //initialize your db, don't forget to include the possible heroku database URL
 
-//export your db
+moduble.exports = {db};       //export your db
